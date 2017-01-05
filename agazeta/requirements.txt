@@ -1,0 +1,17 @@
+dj-database-url==0.4.0
+dj-static==0.0.6
+Django==1.10.3
+django-filter==1.0.1
+djangorestframework==3.5.3
+gunicorn==19.4.5
+psycopg2==2.6.1
+python-decouple==3.0
+unipath==1.1
+django-sslify==0.2.7
+raven==5.20.0
+pandas==0.19.1
+Markdown==2.6.7
+numpy==1.11.2
+pytz==2016.10
+six==1.10.0
+python-dateutil==2.6.0

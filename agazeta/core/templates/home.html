@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Colabore com a Gazeta de Geringontzan
+{% endblock title %}
+
+{% block body %}
+
+<center>
+<h2>Torne-se nosso informante</h2>
+<p>Dora R. está a procura de novos informantes para suas </br>
+  investigações sobre as familias criminosas da cidade para trazer </br>
+  sempre a notícia mais quente para "A Gazeta de Geringontzan".</p>
+<p>Para colaborar com Dora R. você precisa instalar o programa <b>Track-o-bot</b></br>
+  e seguir esses três passos simples:</p>
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/leMfG">
+	<a href="//imgur.com/leMfG"></a></blockquote>
+	<script async src="//s.imgur.com/min/embed.js" charset="utf-8">
+	</script>
+
+<p><b>Primeiro passo</b>, clique com o botão direito no ícone do aplicativo Track-o-bot</br>
+   presente na barra de tarefas, selecione a opção Open Profile... </br>
+   o seu browser irá abrir na página Profile do Track-o-Bot.</br>
+   <b>Segundo passo</b>, clique em opções, simbolizado por uma roda dentada,</br>
+   e então clique em API.</br>
+   <b>Terceiro passo</b>, clique no botão REVEAL para revelar seu Token de acesso,</br>
+   copie o seu username e token para essa página.</p>
+</br>
+<form action="." method="post">
+	{% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Send</button>
+</form>
+<p><b>Email não é obrigatório</b>: Você pode deixar em branco caso deseje permanecer anônimo.</br>
+Você pode selecionar "Subscribe" para receber notícias por email quando novos reports sobre</br>
+o Meta-game de Hearthstone forem lançados, e para receber aviso por email caso haja problemas</br>
+com o seu token.</p>
+
+<h3>Nosso Compromisso</h3>
+<p>Nós prometemos utilizar o username e token exclusivamente para obter dados de partidas</p>
+<p>Você pode remover o seu registro de nossos bancos de dados simplesmente mandando regenerar seu token</p>
+<p>O username e token são doados para nós por boa fé, com o intuito de melhorar a comunidade Hearthstone</p>
+<p>Seu username e token, bem como seu email, NUNCA serão compartilhados com terceiros</p>
+<p>As conclusões tiradas a partir da análise dos dados obtidos por esse aplicativo são LIVRES e GRATUITOS</p>
+</br>
+<p>Atenciosamente, <b>Lucas Scoppio. e MKTV</b></p>
+</center>
+{% endblock body %}

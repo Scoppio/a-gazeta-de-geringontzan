@@ -1,0 +1,1 @@
+web: gunicorn agazeta.wsgi --log-file -
