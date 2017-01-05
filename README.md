@@ -1,6 +1,7 @@
 # A Gazeta de Geringontzan
 
 API for mining Hearthstone data.
+https://agazeta.herokuapp.com
 
 ## Meta Reports
 Hearthstone is a fast paced game, with a professional league, world championship
